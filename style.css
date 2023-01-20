@@ -68,7 +68,7 @@ section.productsInCarrossel .baseProduct text {
 }
 
 section.productsInCarrossel .card-products .card {
-    width: 84%;
+    width: 76%;
     background-color: #FFF;
     margin-left: auto;
     border-radius: 10px;
@@ -98,7 +98,7 @@ section.productsInCarrossel .card {
     display: flex;
 }
 section.productsInCarrossel p{
-    width: 100%;
+    width: 600px;
 }
 section.productsInCarrossel .card img {
     width: 70%;
@@ -133,7 +133,6 @@ section.productsInCarrossel .card .card-title-text {
 section.productsInCarrossel .card .card-img-product {
     background-color: #FFF8DD;
     border-radius: 10px;
-
 }
 section#gallery {
     background-color: #00a599;
@@ -171,18 +170,18 @@ section#gallery .slick-dots {
     padding: 20px;
     border: 1px solid #888;
     border-radius: 15px;
-    width: 70%;
+    width: 80%;
   }
 
   .modal-content div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 40px;
     margin-top: 20px;
   }
 
   .modal-content .modal-img {
-    width: 15%;
+    width: 12% !important;
   }
 
   
@@ -207,6 +206,14 @@ section#gallery .slick-dots {
     margin-left: -1%;
     margin-top: -1%;
   }
+  .modal-content .flex {
+    flex-wrap: wrap;
+    margin-top: 0%;
+  }
+  .modal-content .flex img{
+    flex: 0 0%;
+    margin-top: 5%;
+   }
 
 /* mobile */
 @media (max-width: 785px) {
@@ -220,10 +227,11 @@ section#gallery .slick-dots {
         flex-direction: column;
         display: block;
         padding: 0;
+        padding-bottom: 10%;
+
     }   
     section#description #products img {
         width: 90%;
-        margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -252,6 +260,7 @@ section#gallery .slick-dots {
     }
     .slick-dotted.slick-slider {
         overflow: hidden;
+        margin-bottom: 0%;
     }
     section#gallery img {
         width: 80%;
@@ -261,5 +270,14 @@ section#gallery .slick-dots {
         position: absolute;
         margin-left: -2%;
         margin-top: -4%;
+    }
+    section.productsInCarrossel p {
+        width: 100%;
+    }
+    section#gallery {
+        padding-bottom: 10%;
+    }
+    section.productsInCarrossel .slick-prev, .slick-next {
+        width: 27%;
     }
 }
