@@ -132,6 +132,8 @@ section.productsInCarrossel .card .card-title-text {
 }
 section.productsInCarrossel .card .card-img-product {
     background-color: #FFF8DD;
+    border-radius: 10px;
+
 }
 section#gallery {
     background-color: #00a599;
