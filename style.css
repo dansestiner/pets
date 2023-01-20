@@ -11,6 +11,7 @@ html, body {
     scroll-behavior: smooth;
     overflow:hidden;
     overflow-y: auto;
+    font-family: gotham !important;
 }
 p {
     line-height: 30px;
