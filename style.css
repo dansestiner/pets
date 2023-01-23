@@ -283,6 +283,9 @@ section#gallery .slick-dots {
     .flex.mobile {
         display: block !important;
     }
+    .modal-content {
+        width: 75%;
+    }
     .modal-content .modal-img {
         width: 92%;
     }
