@@ -123,9 +123,32 @@
                     <img src="/imagens/modal-JANELA-LATERAL-LPPETS-01.png" class="modal-img" />
                     <img src="/imagens/modal-ABERTURA-FRONTAL-LPPETS-01.png" class="modal-img" />
                     <img src="/imagens/modal-JANELA-SUPERIOR-LPPETS-01.png" class="modal-img" />
-                    <img src="/imagens/modal-ABERTURA-LATERAL-LPPETS-01.png" class="modal-img" />
-                    <img src="/imagens/modal-ALCA-CARONA-LPPETS-01.png" class="modal-img" />
-                    <img src="/imagens/modal-USO-CARRO-LPPETS-01.png" class="modal-img" />
+                    <div>
+                        <img src="/imagens/modal-ABERTURA-LATERAL-LPPETS-01.png" class="modal-img" />
+                        <img src="/imagens/modal-ALCA-CARONA-LPPETS-01.png" class="modal-img" />
+                        <img src="/imagens/modal-USO-CARRO-LPPETS-01.png" class="modal-img" />
+                    </div>
+                    
+                </div>
+                <div class="flex mobile">
+                    <div>
+                        <img src="/imagens/modal-JANELA-LATERAL-LPPETS-01.png" class="modal-img" />
+                    </div>
+                    <div>
+                        <img src="/imagens/modal-ABERTURA-FRONTAL-LPPETS-01.png" class="modal-img" />    
+                    </div>
+                    <div>
+                        <img src="/imagens/modal-JANELA-SUPERIOR-LPPETS-01.png" class="modal-img" />
+                    </div>
+                    <div>
+                        <img src="/imagens/modal-ABERTURA-LATERAL-LPPETS-01.png" class="modal-img" />
+                    </div>
+                    <div>
+                        <img src="/imagens/modal-ALCA-CARONA-LPPETS-01.png" class="modal-img" />
+                    </div>
+                    <div>
+                        <img src="/imagens/modal-USO-CARRO-LPPETS-01.png" class="modal-img" />
+                    </div>                    
                 </div>
             </div>
             <div class="modal-content modal02 hidden">
@@ -201,33 +224,19 @@
                         }
                     ]
                 });
-
-                $('.modal01.for-mobile').slick({
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '0px',
-                                slidesToShow: 1,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '0px',
-                                slidesToShow: 1,
-                                centerMode: true,
-                                dots: true
-                            }
-                        }
-                    ]
-                });
+                
+                $('.flex.mobile').slick({ 
+                    infinite: true,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                })
+                setTimeout(() => { 
+                    $('.flex.mobile').slick("refresh")
+                }, 2000);
+                
             });
+
             // Get the modal
             var modal = document.getElementById("myModal");
 
