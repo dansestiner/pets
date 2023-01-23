@@ -180,8 +180,6 @@ section#gallery .slick-dots {
 
   .modal-content .modal-img {   
     width: 18%;
-    margin-bottom: 30px;
-
   }  
 
   /* The Close Button */
@@ -287,7 +285,8 @@ section#gallery .slick-dots {
         width: 75%;
     }
     .modal-content .modal-img {
-        width: 92%;
+        width: 96%;
+        margin-bottom: 47px;
     }
     ul.slick-dots li button:before { 
         margin-top: -25px;        
