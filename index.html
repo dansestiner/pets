@@ -130,7 +130,7 @@
                     </div>
                     
                 </div>
-                <div class="flex mobile">
+                <div class="flex mobile setPosition">
                     <div>
                         <img src="/imagens/modal-JANELA-LATERAL-LPPETS-01.png" class="modal-img" />
                     </div>
@@ -225,18 +225,18 @@
                     ]
                 });
                 
-                $('.flex.mobile').slick({ 
-                    infinite: true,
-                    slidesToShow: 1,
-                    arrows: false,
-                    dots: true,
-                })
-                setTimeout(() => { 
-                    $('.flex.mobile').slick("refresh")
-                }, 2000);
-                
+                $('.icon').on('click', function (e) {                    
+                    
+                    $('.flex.mobile').slick({
+                        infinite: true,
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true
+                    });                 
+                    $('.flex.mobile').slick('setPosition');
+                });
             });
-
+            
             // Get the modal
             var modal = document.getElementById("myModal");
 
